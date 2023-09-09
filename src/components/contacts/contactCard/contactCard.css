@@ -1,0 +1,72 @@
+.contactCard{
+    margin: 10px;
+    background-color: rgba(18, 88, 169, 0.893);
+    width: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.contactCard .imagePlatform img{
+    border-radius: 30px;
+    width: 100%;
+}
+.contactCard .buttonPlatform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactCard .buttonPlatform button{
+    width: 150px;
+    padding: 6px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background-color: rgb(5, 230, 255);
+    color: white;
+    font-weight: 900;
+}
+.contactCard .titlePlatform h1{
+    font-size: 150%;
+    position: relative;
+    left: 5px;
+}
+@keyframes contactCardSwipeUp{
+    0%{
+        opacity: 0;
+        top: 20px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+.contactCard:nth-child(1){
+    animation: contactCardSwipeUp 1s 0s ease;
+    animation-fill-mode: forwards;
+
+}
+
+.contactCard:nth-child(2){
+    animation: contactCardSwipeUp 1s .5s ease;
+    animation-fill-mode: forwards;
+
+}
+
+.contactCard:nth-child(3){
+    animation: contactCardSwipeUp 1s 1s ease;
+    animation-fill-mode: forwards;
+
+}
+
+.contactCard:nth-child(4){
+    animation: contactCardSwipeUp 1s 1.5s ease;
+    animation-fill-mode: forwards;
+
+}
+
+.contactCard:nth-child(5){
+    animation: contactCardSwipeUp 1s 2s ease;
+    animation-fill-mode: forwards;
+}

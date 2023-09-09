@@ -1,0 +1,76 @@
+.card{
+    width: 300px;
+    background-color: rgba(16, 18, 41, 0.784);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .55);
+    margin: 10px;
+    opacity: 0;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button button {
+    width: 150px;
+    padding: 10px;
+    font-size: 120%;
+    background-color: rgb(8, 22, 42);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2.5px white;
+    font-family: monospace;
+    border: none;
+}
+@media screen and (max-width: 820px){
+    .card{
+        width: 250px;
+        transform: scale(0.95);
+    }
+}
+
+@keyframes CardSwipeUp{
+    0%{
+        opacity: 0;
+        top: 20px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+.card:nth-child(1){
+    animation: contactCardSwipeUp 1s 0s ease;
+    animation-fill-mode: forwards;
+
+}
+
+.card:nth-child(2){
+    animation: contactCardSwipeUp 1s .5s ease;
+    animation-fill-mode: forwards;
+
+}
+
+.card:nth-child(3){
+    animation: contactCardSwipeUp 1s 1s ease;
+    animation-fill-mode: forwards;
+
+}
+
+.card:nth-child(4){
+    animation: contactCardSwipeUp 1s 1.5s ease;
+    animation-fill-mode: forwards;
+
+}
+
+.card:nth-child(5){
+    animation: contactCardSwipeUp 1s 2s ease;
+    animation-fill-mode: forwards;
+}

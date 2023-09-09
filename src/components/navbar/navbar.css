@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+.navbar{
+    background-color: black;
+    color: white;
+    padding: 1px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Mono';
+    font-size: 17.5px;
+}
+.rootsh{
+    margin-left: 10px;
+}
+@keyframes blinking {
+    0%{
+      color: white;
+    }
+    100%{
+      color: black;
+    }
+}
+
+.blinking{
+    margin-left: 4px;
+    font-weight: 900;
+    animation: blinking 0.5s infinite alternate;
+}
+a {
+    color: white;
+    margin: 10px;
+    color: aqua;
+}
+@media screen and (max-width: 691px) {
+ .navbar{
+    font-size: 14px;
+ }   
+}
+@media screen and (max-width: 558px) {
+ .navbar{
+    font-size: 8px;
+ }   
+}

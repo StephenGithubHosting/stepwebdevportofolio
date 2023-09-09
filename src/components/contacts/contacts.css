@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap');
+
+.contacts{
+    color:white;
+    font-family: 'Lato';
+    background-color: black;
+    margin: 20px;
+    padding: 2px;
+    border-radius: 30px;
+    position: relative;
+    animation: startcontacts 1s ease;
+}
+.contacts .title {
+    margin: 40px;
+    font-size: 23px;
+}
+.contactsContainer{
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+@keyframes startcontacts{
+    0%{
+        opacity: 0;
+        top: 50px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}

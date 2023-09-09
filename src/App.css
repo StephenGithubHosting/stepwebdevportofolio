@@ -1,0 +1,38 @@
+body{
+  margin: 0px;
+  background-color: rgb(8, 22, 42);
+  animation: wait 1s 2.89s ease;
+}
+
+@keyframes wait {
+    0%{
+      overflow: hidden;
+    }
+    100%{
+      overflow: auto;
+    }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: #f1f1f1;  */
+  border-radius: 100px;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 100px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

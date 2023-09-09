@@ -1,0 +1,44 @@
+.divinamylove{
+    margin: 40px;
+    color: white;
+    width: 500px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.buttons button{
+    width: 75px;
+    margin: 10px;
+    padding: 4px;
+    border-radius: 10px;
+    border: none;
+}
+.buttons button:nth-child(1){
+    box-shadow: 0px 0px 5px 0px lime;
+    background-color: rgb(11, 203, 11);
+    color: white;
+    font-weight: 900;
+    font-family: monospace;
+}
+.buttons button:nth-child(2){
+    box-shadow: 0px 0px 5px 0px red;
+    background-color: rgb(192, 4, 4);
+    color: white;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 745px) {
+    .divinamylove{
+    margin: 40px;
+    color: white;
+    width: 80%;
+}
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap');
+.projects{
+    color: white;
+    margin: 20px;
+    background-color: rgba(37, 54, 88, 0.732);
+    padding: 10px;
+    border-radius: 30px;
+    animation: startproject 1s;
+}
+.projects .title{
+    margin: 40px;
+    font-size: 25px;
+    font-family: 'Lato';
+}
+.cardContainer{
+    margin: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 820px) {
+    .projects .title{
+        margin: 20px;
+        font-size: 20px;
+    }
+    .cardContainer{
+        justify-content: center;
+    }
+}
+@keyframes startproject{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
